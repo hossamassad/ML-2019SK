@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[6]:
+
 
 
 import keras
@@ -25,7 +25,7 @@ from random import sample
 #            '2D' for 2D-CNN
 #            '3D' for 3D-CNN
 
-# In[7]:
+
 
 
 def import_process_data(state='2D'):
@@ -127,7 +127,6 @@ def import_process_data(state='2D'):
 # state: 'P' for P-wave
 #        'S' for S-wave
 
-# In[8]:
 
 
 def train_RF(data, labels_P, labels_S, state='P', n=1):
@@ -168,7 +167,6 @@ def train_RF(data, labels_P, labels_S, state='P', n=1):
 #        'S' for S-wave
 # 
 
-# In[9]:
 
 
 def train_2D(data, labels_P, labels_S, state='P', n=1):
@@ -258,7 +256,6 @@ def train_2D(data, labels_P, labels_S, state='P', n=1):
 #        'S' for S-wave
 # 
 
-# In[10]:
 
 
 def train_3D(data, labels_P, labels_S, state='P', n=1):
@@ -347,7 +344,6 @@ def train_3D(data, labels_P, labels_S, state='P', n=1):
 #        '3D' for 3D-CNN
 # 
 
-# In[11]:
 
 
 def analysis(X, y, model, n, state='2D'):
@@ -388,9 +384,8 @@ def analysis(X, y, model, n, state='2D'):
 # wave: 'P' for P-wave
 #       'S' for S-wave
 # n: the number of traces to be blocked
-# 
 
-# In[12]:
+
 
 
 def main(state, wave, n):
